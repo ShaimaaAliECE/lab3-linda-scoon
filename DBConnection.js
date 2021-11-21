@@ -1,9 +1,9 @@
 const sql = require("mysql");
 
 function getConnection() {
-  let conn = mysql.createConnection({
+  let conn = sql.createConnection({
     host: "35.194.56.78",
-    username: "root",
+    user: "root",
     password: "ping123",
     database: "DoodleAppDB",
   });
