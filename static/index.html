@@ -20,26 +20,21 @@
   <body class="d-flex justify-content-center lead">
     <div class="row mt-5">
       <h1 class="col-6 mx-auto">DOODLE APP</h1>
-      <form action="booking.html" method="post"class="border p-5 mt-5 col-12">
+      <form action="/login" method="post" class="border p-5 mt-5 col-12">
         <h2>Please Login</h2>
         <div class="form-group">
           <label for="name">Name</label>
-          <input
-            type="name"
-            class="form-control"
-            id="name"
-            aria-describedby="name"
-          />
+          <input type="text" class="form-control" name="usr" required />
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" />
+          <input type="password" class="form-control" name="pwd" required />
         </div>
-        <button type="submit" class="btn btn-primary mt-1">Submit</button>
+        <button type="submit" class="btn btn-info mt-1">Submit</button>
       </form>
-      <a href="booking.html"
-        ><button class="btn btn-info col-12 mt-2">ACCESS AS GUEST</button></a
-      >
+      <a href="/booking">
+        <button class="btn btn-info col-12 mt-2">ACCESS AS GUEST</button>
+      </a>
     </div>
   </body>
 </html>
